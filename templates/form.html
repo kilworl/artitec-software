@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+{% block body %}
+<form action="/usuario" method="post">
+    <label for="nombreUser">Ingresa nombre</label>
+    <input type="text" name="nombreUser"><br/>
+    <label for="nombreApellido">Ingresa apellido</label>
+    <input type="text" name="nombreApellido"><br/>
+    <label for="Dirreccion">Ingrese dirreccion</label>
+    <input type="text" name="Dirreccion"><br/>
+    <label for="correo">Ingresa correo</label>
+    <input type="text" name="correo"><br/>
+
+    <input type="submit" value="enviar"/>
+</form>
+
+
+{% endblock %}
